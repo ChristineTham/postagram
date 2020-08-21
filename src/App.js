@@ -44,7 +44,7 @@ function Router() {
   /* fetch posts when component loads */
   useEffect(() => {
     fetchPosts();
-  }, []);
+  });
 
   async function setPostState(postsArray) {
     const user = await Auth.currentAuthenticatedUser();

@@ -27,7 +27,7 @@ export default function Post() {
     }
     useEffect(() => {
         fetchPost()
-    }, [])
+    })
     if (loading) return <h3>Loading...</h3>
     console.log('post: ', post)
     return (
